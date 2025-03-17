@@ -24,9 +24,6 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* Navigation */}
-      <Navbar />
-
       {/* Hero Image Section */}
       <div className="flex justify-center items-center py-8 bg-white">
         <div className="w-full max-w-3xl px-4">
