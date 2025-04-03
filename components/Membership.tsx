@@ -33,10 +33,10 @@ export default function Membership() {
     <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#4A2C2A] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Join Our Community
           </h2>
-          <div className="h-1.5 w-32 bg-[#D4A017] mx-auto rounded-full mb-6"></div>
+          <div className="h-1.5 w-32 bg-secondary mx-auto rounded-full mb-6"></div>
           <p className="text-xl max-w-3xl mx-auto text-gray-700">
             Become a member of BSCAC and gain access to resources, support, and
             a community that understands your challenges.
@@ -47,7 +47,7 @@ export default function Membership() {
           {/* Standard Membership Card */}
           <Card className="border-2 border-gray-200 shadow-md hover:shadow-lg transition-shadow">
             <CardHeader className="text-center pb-2">
-              <CardTitle className="text-2xl font-bold text-[#4A2C2A]">
+              <CardTitle className="text-2xl font-bold text-primary">
                 Standard Membership
               </CardTitle>
               <CardDescription className="text-gray-600">
@@ -56,7 +56,7 @@ export default function Membership() {
             </CardHeader>
             <CardContent className="pt-4">
               <div className="text-center mb-6">
-                <span className="text-3xl font-bold text-[#4A2C2A]">Free</span>
+                <span className="text-3xl font-bold text-primary">Free</span>
               </div>
               <ul className="space-y-3 mb-8">
                 {standardBenefits.map((benefit, index) => (
@@ -68,7 +68,7 @@ export default function Membership() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full py-6 bg-gray-100 hover:bg-gray-200 text-[#4A2C2A] font-semibold text-lg border border-gray-300">
+              <Button className="w-full py-6 bg-gray-100 hover:bg-gray-200 text-primary font-semibold text-lg border border-gray-300">
                 Sign Up
               </Button>
             </CardFooter>
@@ -77,12 +77,12 @@ export default function Membership() {
           {/* Premium Membership Card */}
           <Card className="border-2 border-[#D4A017] shadow-lg hover:shadow-xl transition-shadow relative">
             <div className="absolute -top-4 right-4">
-              <Badge className="bg-[#4A2C2A] text-white px-4 py-1 text-sm font-medium">
+              <Badge className="bg-primary text-white px-4 py-1 text-sm font-medium">
                 Recommended
               </Badge>
             </div>
             <CardHeader className="text-center pb-2">
-              <CardTitle className="text-2xl font-bold text-[#4A2C2A]">
+              <CardTitle className="text-2xl font-bold text-primary">
                 Premium Membership
               </CardTitle>
               <CardDescription className="text-gray-600">
@@ -91,21 +91,21 @@ export default function Membership() {
             </CardHeader>
             <CardContent className="pt-4">
               <div className="text-center mb-6">
-                <span className="text-3xl font-bold text-[#4A2C2A]">
+                <span className="text-3xl font-bold text-primary">
                   Coming Soon
                 </span>
               </div>
               <ul className="space-y-3 mb-8">
                 {premiumBenefits.map((benefit, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-[#D4A017] mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-secondary mr-2 mt-0.5 flex-shrink-0" />
                     <span>{benefit}</span>
                   </li>
                 ))}
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full py-6 bg-[#D4A017] hover:bg-[#B78C00] text-white font-semibold text-lg">
+              <Button className="w-full py-6 bg-secondary hover:bg-secondary-hover text-white font-semibold text-lg">
                 Join Premium
               </Button>
             </CardFooter>
@@ -113,7 +113,7 @@ export default function Membership() {
         </div>
 
         <div className="mt-16 text-center max-w-3xl mx-auto">
-          <h3 className="text-2xl font-bold text-[#4A2C2A] mb-4">
+          <h3 className="text-2xl font-bold text-primary mb-4">
             You're Not Alone
           </h3>
           <p className="text-gray-700 text-lg mb-8">
@@ -123,7 +123,7 @@ export default function Membership() {
           </p>
           <Button
             size="lg"
-            className="px-8 py-6 h-auto bg-[#4A2C2A] hover:bg-[#3A1C1A] text-white font-bold text-lg"
+            className="px-8 py-6 h-auto bg-primary hover:bg-primary-hover text-white font-bold text-lg"
           >
             Learn More About Our Mission
           </Button>

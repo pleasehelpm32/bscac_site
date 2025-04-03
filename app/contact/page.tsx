@@ -39,14 +39,14 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Page Header */}
-      <header className="bg-[#4A2C2A] text-white py-12 px-4 md:px-6 shadow-md">
+      <header className="bg-primary text-primary-foreground py-12 px-4 md:px-6 shadow-md">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               Contact & Help
             </h1>
-            <div className="h-1 w-32 bg-[#D4A017] mx-auto rounded-full"></div>
-            <h2 className="text-2xl md:text-3xl font-bold">
+            <div className="h-1 w-32 bg-secondary mx-auto rounded-full"></div>
+            <h2 className="text-2xl md:text-3xl font-bold text-secondary">
               We're Here For You
             </h2>
             <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
@@ -62,10 +62,10 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Urgent Contact Options */}
             <div className="md:col-span-1 space-y-6">
-              <Card className="border-[#D4A017]">
-                <CardHeader className="bg-[#4A2C2A] text-white rounded-t-lg">
+              <Card className="border-secondary">
+                <CardHeader className="bg-primary text-primary-foreground rounded-t-lg">
                   <div className="flex items-center space-x-2">
-                    <AlertTriangle className="h-6 w-6 text-[#D4A017]" />
+                    <AlertTriangle className="h-6 w-6 text-secondary" />
                     <CardTitle>Urgent Help</CardTitle>
                   </div>
                   <CardDescription className="text-gray-200">
@@ -74,9 +74,9 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent className="pt-6 space-y-4">
                   <div className="flex items-start space-x-3">
-                    <Phone className="h-5 w-5 text-[#4A2C2A] mt-1" />
+                    <Phone className="h-5 w-5 text-primary mt-1" />
                     <div>
-                      <h3 className="font-medium text-[#4A2C2A]">
+                      <h3 className="font-medium text-primary">
                         Emergency Hotline
                       </h3>
                       <p className="text-gray-600">(Coming Soon)</p>
@@ -84,19 +84,17 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start space-x-3">
-                    <Mail className="h-5 w-5 text-[#4A2C2A] mt-1" />
+                    <Mail className="h-5 w-5 text-primary mt-1" />
                     <div>
-                      <h3 className="font-medium text-[#4A2C2A]">
-                        Urgent Email
-                      </h3>
+                      <h3 className="font-medium text-primary">Urgent Email</h3>
                       <p className="text-gray-600">urgent@bscac.ca</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-3">
-                    <Clock className="h-5 w-5 text-[#4A2C2A] mt-1" />
+                    <Clock className="h-5 w-5 text-primary mt-1" />
                     <div>
-                      <h3 className="font-medium text-[#4A2C2A]">
+                      <h3 className="font-medium text-primary">
                         Response Time
                       </h3>
                       <p className="text-gray-600">
@@ -114,24 +112,24 @@ export default function ContactPage() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-[#4A2C2A]">
+                  <CardTitle className="text-primary">
                     General Contact
                   </CardTitle>
                   <CardDescription>For non-urgent inquiries</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <Mail className="h-5 w-5 text-[#4A2C2A] mt-1" />
+                    <Mail className="h-5 w-5 text-primary mt-1" />
                     <div>
-                      <h3 className="font-medium text-[#4A2C2A]">Email</h3>
+                      <h3 className="font-medium text-primary">Email</h3>
                       <p className="text-gray-600">info@bscac.ca</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-3">
-                    <Clock className="h-5 w-5 text-[#4A2C2A] mt-1" />
+                    <Clock className="h-5 w-5 text-primary mt-1" />
                     <div>
-                      <h3 className="font-medium text-[#4A2C2A]">
+                      <h3 className="font-medium text-primary">
                         Business Hours
                       </h3>
                       <p className="text-gray-600">
@@ -147,7 +145,7 @@ export default function ContactPage() {
             <div className="md:col-span-2">
               <Card className="shadow-lg">
                 <CardHeader className="border-b">
-                  <CardTitle className="text-2xl text-[#4A2C2A]">
+                  <CardTitle className="text-2xl text-primary">
                     Support Request Form
                   </CardTitle>
                   <CardDescription>
@@ -174,7 +172,7 @@ export default function ContactPage() {
                           />
                         </svg>
                       </div>
-                      <h3 className="text-xl font-bold text-[#4A2C2A]">
+                      <h3 className="text-xl font-bold text-primary">
                         Request Submitted
                       </h3>
                       <p className="text-gray-600">
@@ -183,7 +181,7 @@ export default function ContactPage() {
                       </p>
                       <Button
                         onClick={() => setFormSubmitted(false)}
-                        className="mt-4 bg-[#4A2C2A] hover:bg-[#3A1C1A] text-white"
+                        className="mt-4 bg-primary hover:bg-primary/80 text-white"
                       >
                         Submit Another Request
                       </Button>
@@ -227,7 +225,7 @@ export default function ContactPage() {
                             <RadioGroupItem
                               value="support"
                               id="support"
-                              className="text-[#4A2C2A] border-[#4A2C2A] data-[state=checked]:bg-[#4A2C2A] data-[state=checked]:border-[#4A2C2A]"
+                              className="text-primary border-primary data-[state=checked]:bg-primary data-[state=checked]:border-primary"
                             />
                             <Label htmlFor="support" className="font-normal">
                               General Support
@@ -237,7 +235,7 @@ export default function ContactPage() {
                             <RadioGroupItem
                               value="legal"
                               id="legal"
-                              className="text-[#4A2C2A] border-[#4A2C2A] data-[state=checked]:bg-[#4A2C2A] data-[state=checked]:border-[#4A2C2A]"
+                              className="text-primary border-primary data-[state=checked]:bg-primary data-[state=checked]:border-primary"
                             />
                             <Label htmlFor="legal" className="font-normal">
                               Legal Assistance
@@ -247,7 +245,7 @@ export default function ContactPage() {
                             <RadioGroupItem
                               value="training"
                               id="training"
-                              className="text-[#4A2C2A] border-[#4A2C2A] data-[state=checked]:bg-[#4A2C2A] data-[state=checked]:border-[#4A2C2A]"
+                              className="text-primary border-primary data-[state=checked]:bg-primary data-[state=checked]:border-primary"
                             />
                             <Label htmlFor="training" className="font-normal">
                               Training & Education
@@ -257,7 +255,7 @@ export default function ContactPage() {
                             <RadioGroupItem
                               value="other"
                               id="other"
-                              className="text-[#4A2C2A] border-[#4A2C2A] data-[state=checked]:bg-[#4A2C2A] data-[state=checked]:border-[#4A2C2A]"
+                              className="text-primary border-primary data-[state=checked]:bg-primary data-[state=checked]:border-primary"
                             />
                             <Label htmlFor="other" className="font-normal">
                               Other
@@ -279,7 +277,7 @@ export default function ContactPage() {
                       <div className="flex justify-end">
                         <Button
                           type="submit"
-                          className="bg-[#D4A017] hover:bg-[#B78C00] text-white px-8 py-6 h-auto text-lg font-semibold"
+                          className="bg-secondary hover:bg-secondary/80 text-white px-8 py-6 h-auto text-lg font-semibold"
                         >
                           Submit Request
                         </Button>
@@ -293,8 +291,8 @@ export default function ContactPage() {
 
           {/* FAQ Section (Optional) */}
           <section className="mt-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#4A2C2A] flex items-center">
-              <span className="bg-[#D4A017] text-white p-2 rounded-full mr-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-primary flex items-center">
+              <span className="bg-secondary text-white p-2 rounded-full mr-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"

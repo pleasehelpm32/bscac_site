@@ -5,7 +5,7 @@ import { Toaster } from "sonner";
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <Toaster />
+      <Toaster position="top-center" />
       {children}
     </>
   );

@@ -6,13 +6,13 @@ export default function MembershipPage() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Header Section */}
-      <header className="bg-[#4A2C2A] text-white py-12 px-4 md:px-6 shadow-md">
+      <header className="bg-primary text-white py-12 px-4 md:px-6 shadow-md">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               BSCAC Membership
             </h1>
-            <div className="h-1 w-32 bg-[#D4A017] mx-auto rounded-full"></div>
+            <div className="h-1 w-32 bg-secondary mx-auto rounded-full"></div>
             <h2 className="text-2xl md:text-3xl font-bold">
               Join Our Community
             </h2>
@@ -34,8 +34,8 @@ export default function MembershipPage() {
           <section className="py-16 px-4 md:px-6">
             <div className="bg-white p-10 rounded-xl shadow-lg border border-gray-100">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#4A2C2A] flex items-center">
-                  <span className="bg-[#D4A017] text-white p-2 rounded-full mr-4">
+                <h2 className="text-2xl md:text-3xl font-bold mb-8 text-primary flex items-center">
+                  <span className="bg-secondary text-white p-2 rounded-full mr-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6"
@@ -53,7 +53,7 @@ export default function MembershipPage() {
                   </span>
                   Why Join BSCAC?
                 </h2>
-                <div className="space-y-6 text-lg text-[#1A1A1A] leading-relaxed">
+                <div className="space-y-6 text-lg text-accent leading-relaxed">
                   <p>
                     Joining BSCAC connects you to a groundbreaking movement
                     dedicated to redefining the building superintendent and
@@ -78,7 +78,7 @@ export default function MembershipPage() {
                   <div className="pt-6">
                     <Button
                       size="lg"
-                      className="text-lg px-10 py-7 h-auto bg-[#D4A017] hover:bg-[#B78C00] text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all"
+                      className="text-lg px-10 py-7 h-auto bg-primary hover:bg-primary-hover text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all"
                     >
                       Sign Up Now
                     </Button>
