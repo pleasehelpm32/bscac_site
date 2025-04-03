@@ -1,6 +1,8 @@
-import Navbar from "@/components/Navbar";
+// app/membership/page.tsx
 import Membership from "@/components/Membership";
 import { Button } from "@/components/ui/button";
+import MembershipContributions from "@/components/MembershipContributions";
+import UnderstandingAssociation from "@/components/UnderstandingAssociation";
 
 export default function MembershipPage() {
   return (
@@ -30,7 +32,17 @@ export default function MembershipPage() {
           {/* Membership Section */}
           <Membership />
 
-          {/* Additional Information */}
+          {/* Allocation of Membership Contributions */}
+          <section className="py-16 px-4 md:px-6">
+            <MembershipContributions />
+          </section>
+
+          {/* Understanding Your Association */}
+          <section className="py-16 px-4 md:px-6">
+            <UnderstandingAssociation />
+          </section>
+
+          {/* Why Join BSCAC */}
           <section className="py-16 px-4 md:px-6">
             <div className="bg-white p-10 rounded-xl shadow-lg border border-gray-100">
               <div className="max-w-4xl mx-auto">
@@ -75,7 +87,7 @@ export default function MembershipPage() {
                     while elevating the standards of the industry as a whole.
                   </p>
 
-                  <div className="pt-6">
+                  <div className="pt-6 flex justify-center">
                     <Button
                       size="lg"
                       className="text-lg px-10 py-7 h-auto bg-primary hover:bg-primary-hover text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all"

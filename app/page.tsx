@@ -1,8 +1,9 @@
+// app/page.tsx
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import Image from "next/image";
+import AssociationExplanation from "@/components/AssociationExplanation";
+import WhatMakesBSCACGreat from "@/components/WhatMakesBSCACGreat";
 
 export default function HomePage() {
   return (
@@ -41,7 +42,7 @@ export default function HomePage() {
       {/* Main Content */}
       <main className="flex-1">
         <div className="container mx-auto max-w-6xl">
-          {/* About Section */}
+          {/* What Makes BSCAC Great Section */}
           <section className="py-16 px-4 md:px-6">
             <div className="bg-white p-10 rounded-xl shadow-lg border border-gray-100">
               <div className="max-w-4xl mx-auto">
@@ -62,34 +63,37 @@ export default function HomePage() {
                       />
                     </svg>
                   </span>
-                  About BSCAC
+                  What Makes BSCAC Great
                 </h2>
                 <div className="space-y-6 text-lg md:text-xl text-accent leading-relaxed">
                   <p>
                     The Building Superintendents and Cleaners Association of
-                    Canada (BSCAC) is a groundbreaking movement founded by Dean
-                    John Colford to redefine the building superintendent and
-                    cleaner industry. More than just an organization, BSCAC is
-                    dedicated to saving lives, improving working conditions, and
-                    creating a fair playing field for those who have been
-                    overlooked. Our motto, "You're Not Alone," is a promise of
-                    advocacy, support, and meaningful change for workers across
-                    Canada.
+                    Canada (BSCAC) is a one-of-a-kind organization because it
+                    goes beyond just offering a support network—it provides
+                    education, training, legal assistance, mental health
+                    support, and community-building opportunities tailored
+                    specifically for building superintendents and cleaners.
                   </p>
-                  <p>
-                    BSCAC is pioneering a revolution with a dynamic digital
-                    platform as its foundation. Our core focus includes direct
-                    action through food bank support, legal backing, mental
-                    health resources, and industry elevation. We are building a
-                    legacy of collaboration between workers, property managers,
-                    and owners, equipping members with certifications and skills
-                    to thrive. This is a collaborative journey—join us in
-                    shaping a brighter future for the industry, one step at a
-                    time.
-                  </p>
+                  <div className="flex justify-center mt-8">
+                    <Link href="/membership">
+                      <Button className="text-lg px-8 py-6 h-auto bg-secondary hover:bg-secondary/80 text-white font-bold">
+                        Join Our Community
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
+          </section>
+
+          {/* Detailed Features Section */}
+          <section className="py-8 px-4 md:px-6">
+            <WhatMakesBSCACGreat />
+          </section>
+
+          {/* The Plight of Building Superintendents and Cleaners */}
+          <section className="py-16 px-4 md:px-6">
+            <AssociationExplanation />
           </section>
 
           {/* Latest News Section */}
